@@ -1,3 +1,15 @@
+# 1.0.3 — 17/11/2026
+
+- Ẩn Genjutsu Lite khỏi danh sách tạo job mới và ẩn badge free gen Lite trong Accounts. Giữ dữ liệu và job Lite cũ.
+- Bảo vệ backend JavaScript bằng làm rối chuỗi và V8 bytecode; làm rối renderer/preload.
+- Biên dịch backend Python thành 9 module native CPython 3.12 x64; không kèm source nghiệp vụ Python trong bộ cài.
+- Kiểm tra tính toàn vẹn worker trước khi chạy, chặn sửa/chèn module và manifest; chạy Python cách ly với UTF-8.
+- Electron fuses chặn RunAsNode, NODE_OPTIONS và Node inspector; bật ASAR integrity và chỉ nạp ứng dụng từ ASAR.
+
+Kiểm tra: 218 bài kiểm thử source đạt; 66 bài chạy lại trên Python native đạt. Kiểm tra bản đóng gói, giao diện ẩn Lite, private desktop, JSON worker và các trường hợp sửa/chèn file đều đạt. Chế độ chưa kích hoạt license vẫn bị chặn đúng.
+
+Phạm vi: bảo vệ này làm tăng chi phí đọc/sửa code, không bảo đảm chống dịch ngược tuyệt đối. Chưa có cổng license C++/LLVM độc lập như sản phẩm RunningHub cũ. Bộ cài chưa ký số. Chưa thử nâng cấp trên máy Windows sạch hoặc tạo video thật bằng bản native này; các kiểm thử native dùng dữ liệu mô phỏng và media tổng hợp. Cần Python 3.12 x64 và Runtime Setup; máy đã đủ runtime không cần thiết lập lại.
+
 # 1.0.2 — 17/11/2026
 
 - Proxy xoay và proxy tĩnh có giao diện cấu hình thống nhất; ưu tiên proxy xoay khi bật Sử dụng Proxy.
