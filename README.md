@@ -4,7 +4,7 @@ Tải bản mới tại [Releases](https://github.com/phuc-dep-trai/VideoHigg_re
 
 ## Cài lần đầu
 
-1. Tải `VideoHiggsfield-setup-1.0.17.exe` từ Releases.
+1. Tải `VideoHiggsfield-setup-1.0.18.exe` từ Releases.
 2. Chạy bộ cài, mở ứng dụng và nhập license.
 
 Bộ cài đã kèm Python, thư viện và Chromium riêng. Không cần cài Python, pip hay chạy Runtime Setup. FFmpeg và ffprobe cũng được kèm sẵn; không tải/cài thêm công cụ khi gửi job. Cần kết nối Internet để sử dụng dịch vụ.
@@ -13,7 +13,7 @@ Dữ liệu tài khoản và tác vụ được giữ khi cập nhật. Sao lưu
 
 ## Lưu ý
 
-- Windows x64. Bản 1.0.17 chưa ký số; Windows có thể hiển thị cảnh báo nhà phát hành chưa xác định.
+- Windows x64. Bản 1.0.18 chưa ký số; Windows có thể hiển thị cảnh báo nhà phát hành chưa xác định.
 - License VideoHiggsfield độc lập hệ thống cũ; key cũ không dùng lẫn.
 - Khi cần hỗ trợ, vào Logs → Export rồi gửi file Logs. Không gửi cookie/token hoặc toàn bộ database.
 - `SHA256SUMS.txt` dùng để đối chiếu file tải về. `.blockmap` là dữ liệu hỗ trợ cập nhật; người dùng không cần mở file này.
